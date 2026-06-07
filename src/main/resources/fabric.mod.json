@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "bedmonster",
+  "version": "${version}",
+  "name": "BedMonster",
+  "description": "Sleep safely while monsters are nearby.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.Bedmonster"],
+    "client": ["com.example.client.BedmonsterClient"]
+  },
+  "mixins": ["bedmonster.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
